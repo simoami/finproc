@@ -11,7 +11,7 @@ import (
 )
 
 var router *gin.Engine
-const AppContextKey = "AppContext"
+
 // StartServer Wraps the gin Router and binds some Middleware
 func StartServer(ctx models.AppContext) {
 
@@ -28,5 +28,4 @@ func StartServer(ctx models.AppContext) {
   var port = strconv.Itoa(ctx.Port)
   log.Println("App started. Listening on port " + port + " in " + ctx.Env + " mode.")
 	router.Run(":" + port) // listen and serve on 0.0.0.0:8080
-
 }
