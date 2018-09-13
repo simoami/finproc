@@ -3,12 +3,10 @@ package main
 import (
   "github.com/spf13/viper"
 
-  "finproc/app/models"
   "finproc/app"
+  "finproc/app/models"
   "finproc/app/config"
 )
-
-const local string = "LOCAL"
 
 func main() {
 
