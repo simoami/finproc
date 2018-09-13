@@ -10,8 +10,6 @@ import (
   "finproc/app/routes"
 )
 
-var router *gin.Engine
-
 // StartServer Wraps the gin Router and binds some Middleware
 func StartServer(ctx models.AppContext) {
 
