@@ -1,16 +1,16 @@
 package routes
 
 import (
-  "github.com/gin-gonic/gin"
+	"github.com/gin-gonic/gin"
 
-  "finproc/app/handlers"
-  "finproc/app/models"
+	"finproc/app/handlers"
+	"finproc/app/models"
 )
 
 func Routing(router *gin.Engine, ctx models.AppContext) {
-  
-  // Route definitions
-  router.GET("/healthcheck", makeHandler(ctx, handlers.Healthcheck))
+
+	// Route definitions
+	router.GET("/healthcheck", makeHandler(ctx, handlers.Healthcheck))
 }
 
 //  Closure function to add the app context to route handlers

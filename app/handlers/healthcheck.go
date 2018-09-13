@@ -1,14 +1,14 @@
 package handlers
 
 import (
-  "github.com/gin-gonic/gin"
+	"github.com/gin-gonic/gin"
 
-  "finproc/app/models"
+	"finproc/app/models"
 )
 
 func Healthcheck(c *gin.Context, ctx models.AppContext) {
 
-  c.JSON(200, gin.H{
-    "status": "OK",
-  })
+	c.JSON(200, gin.H{
+		"status": "OK",
+	})
 }
